@@ -6,9 +6,7 @@ session:
 url:
   source: path_prefix
   prefixes:
-    pl: pl
-    en: ''
-    '': null
+     pl: ankieta
   domains:
     pl: ''
 selected_langcode: site_default
