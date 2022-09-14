@@ -1,0 +1,27 @@
+uuid: a3391bb0-123c-4a01-b191-fc93f886e0f8
+langcode: pl
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: _G1IfGESk7WqvVCi7B3VJxhSY0YICgv1OmuVPJqO8bE
+id: pentacomp_uzp_main_menu
+theme: pentacomp_uzp
+region: content
+weight: 2
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Główna nawigacja'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

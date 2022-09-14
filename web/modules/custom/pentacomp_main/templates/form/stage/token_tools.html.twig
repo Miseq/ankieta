@@ -1,0 +1,45 @@
+<h1>{{ form['#title'] }}</h1>
+
+<div class="layout-row clearfix">
+  <div class="layout-column layout-column--half">
+    <div class="">
+      <div class="">
+        <p>{{ form['#table'] }}</p>
+        <p>{{ form['#top_info'] }}</p>
+        <p>{{ form['#date_created'] }}</p>
+        <p>
+          {{ form['#last_info'] }}        
+          {{ form.gen_token }}
+          {{ form.remove_token }}
+        </p>
+        <p>{{ form['#date_gen'] }}</p>
+      </div>
+    </div>
+    <div class="">
+      <div class="">
+        {{ form.manual }}
+        {{ form.number_begin }}
+        {{ form.number_end }}
+        {{ form.key }}
+        {{ form.link_url }}
+      </div>
+      <div class="">
+        {{ form.select_questionnaire }}
+        {{ form.select_questionnaire_back }}
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-column layout-column--half">
+    <div class="">
+      <p>Lista przykladowych tokenów dla pierwszych 10 rekordów.</p>
+      {{ form['#exampleList'] }}
+      <ul>
+        {% for row in form['#exampleList'] %}
+          <li>Id zgłoszenia: {{ row['zid'] }} Token: {{ row['token'] }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+</div>

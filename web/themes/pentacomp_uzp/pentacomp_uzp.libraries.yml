@@ -1,0 +1,10 @@
+
+global-styling:
+  version: VERSION
+  css:
+    layout:
+      'https://ezamowienia.gov.pl/wp-includes/css/dist/block-library/style.min.css?ver=5.8.4' : { type: external }
+      'https://ezamowienia.gov.pl/wp-content/themes/portaldostepowy/dist/style.css?ver=5.6' : { type: external }
+      'https://ezamowienia.gov.pl/cdn/files/fonts.css' : { type: external, minified: true }
+    theme:
+      css/color.css: {}

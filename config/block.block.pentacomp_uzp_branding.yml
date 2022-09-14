@@ -1,0 +1,25 @@
+uuid: b5cf222f-dfdd-4e75-8596-9538cdcff88f
+langcode: pl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: pentacomp_uzp_branding
+theme: pentacomp_uzp
+region: content
+weight: 3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marka witryny'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

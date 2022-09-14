@@ -1,0 +1,11 @@
+pentacomp_main.admin.token:
+  title: 'Zarządzanie tokenami'
+  description: 'Zarządzanie tokenami.'
+  route_name: pentacomp_main.token.admin
+  parent: system.admin
+  
+pentacomp_main.generator.token:
+  title: 'Generowanie linków'
+  description: 'Generowanie linków.'
+  route_name: pentacomp_main.token.generator
+  parent: system.admin

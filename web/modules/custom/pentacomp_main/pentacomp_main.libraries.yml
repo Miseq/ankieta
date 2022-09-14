@@ -1,0 +1,12 @@
+pentacomp_main.form.generator:
+  version: 1.0
+  css:
+    theme:
+      css/tokenGen.css: {}
+  js:
+    js/clipboardTools.js: {}
+  dependencies:
+    - core/once
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings

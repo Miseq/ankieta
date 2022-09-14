@@ -1,0 +1,17 @@
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+
+{% if form['#stage'] == 'dashboard' %}
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/dashboard.html.twig' %}
+{% elseif form['#stage'] == 'poll_tools' %}
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/poll_tools.html.twig' %}
+{% elseif form['#stage'] == 'token_tools' %}
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/token_tools.html.twig' %}
+{% elseif form['#stage'] == 'table_tools' %}
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/table_tools.html.twig' %}
+{% elseif form['#stage'] == 'confirm_remove_token' %}
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/token_tools_remove.html.twig' %}
+{% elseif form['#stage'] == 'confirm_remove_table' %}  
+  {% include 'modules/custom/pentacomp_main/templates/form/stage/table_tools_remove.html.twig' %}
+{% endif %}

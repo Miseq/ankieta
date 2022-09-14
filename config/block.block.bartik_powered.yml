@@ -1,0 +1,22 @@
+uuid: 9e8d81d7-17d0-4052-898a-caee93b4ff7d
+langcode: pl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: bartik_powered
+theme: bartik
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Witrynę napędza Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

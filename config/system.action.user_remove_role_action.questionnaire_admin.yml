@@ -1,0 +1,14 @@
+uuid: da72cde8-77cf-4623-a841-127dcb32c36c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.questionnaire_admin
+  module:
+    - user
+id: user_remove_role_action.questionnaire_admin
+label: 'Remove the questionnaire_admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: questionnaire_admin

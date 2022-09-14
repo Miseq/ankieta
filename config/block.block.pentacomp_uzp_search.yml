@@ -1,0 +1,23 @@
+uuid: 0795dfba-271a-4364-b135-f36fe7615557
+langcode: pl
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: jQ-C8l3dJPqYCGST1e-kSjR14PDP4wq-iFbp8dMFcRo
+id: pentacomp_uzp_search
+theme: pentacomp_uzp
+region: content
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Szukaj
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

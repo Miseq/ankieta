@@ -1,0 +1,12 @@
+uuid: 257de74b-e148-4371-a197-f9618e69b655
+langcode: en
+status: true
+dependencies:
+  module:
+    - pentacomp_main
+id: respondent
+label: 'Uczestnik ankiety'
+weight: -9
+is_admin: null
+permissions:
+  - 'access questionnaire'

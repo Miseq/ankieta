@@ -1,0 +1,6 @@
+name: Pentacomp - Ankiety
+version: '1.0.0'
+type: module
+description: 'System zarządzania Tokenami oraz ankietami'
+package: Pentacomp
+core_version_requirement: ^8.8 || ^9

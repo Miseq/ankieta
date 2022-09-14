@@ -1,0 +1,22 @@
+uuid: be087852-678e-497c-9a89-35bc750dbe46
+langcode: pl
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: pentacomp_uzp_help
+theme: pentacomp_uzp
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Pomoc
+  label_display: '0'
+  provider: help
+visibility: {  }

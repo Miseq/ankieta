@@ -1,0 +1,104 @@
+type = "container"
+build = """
+FROM php:8.1.3-fpm
+RUN  apt-get update
+RUN  apt-get install -y --no-install-recommends libfreetype6-dev libjpeg62-turbo-dev libpng-dev 
+RUN  docker-php-ext-configure gd  --with-jpeg=/usr/include/ --with-freetype=/usr/include/
+RUN  docker-php-ext-install -j$(nproc) gd
+RUN  apt-get update
+RUN  docker-php-ext-install bcmath
+RUN  apt-get install git -y
+RUN  apt-get install mariadb-client -y
+RUN  set -eux; 
+RUN  apt install zlib1g-dev && apt-get install zlib1g;
+RUN  apt-get install cmake libfreetype6-dev libfontconfig1-dev xclip -y;
+RUN   apt update;
+RUN 	 apt-get install \
+		coreutils \
+		libjpeg-dev \
+		libpng-dev \
+		libzip-dev \
+	-y ; 
+
+RUN apt-get install -y libpq-dev \
+    && docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql \
+    && docker-php-ext-install pdo pdo_pgsql pgsql
+
+
+RUN apt install postgresql -y
+
+RUN 	docker-php-ext-configure gd \
+ 		--enable-gd \
+		--with-freetype \
+		--with-jpeg=/usr/include \
+	; 
+
+RUN 	docker-php-ext-install \
+		opcache \
+		pdo_pgsql \
+		zip; 
+
+COPY --from=composer:2 /usr/bin/composer /usr/local/bin/
+
+RUN  apt install nginx -y
+    COPY ./docker/nginx/conf.d/local.conf /etc/nginx/sites-available/default
+
+
+RUN  apt install wget \
+		gnupg \
+		lsb-release -y
+RUN  mkdir -p /var/www/html/web/sites/default/files 
+RUN 	chmod -R 765 /var/www/html/ 
+RUN 	chown -R www-data:www-data /var/www/html 
+RUN 	chmod -R 777 /var/www/html/web/sites/default 
+RUN 	cd /var/www/html/web/sites/default 
+
+
+COPY . /var/www/html
+COPY ./settings.php /var/www/html/web/sites/default/settings.php 
+RUN 	chmod -R 777 /var/www/html/web/sites/default/settings.php
+
+RUN  chown -R www-data /var/www/html/web/sites/default
+COPY entry-point.sh /
+ENV DATABASE_DRIVER="pgsql"
+ENV DATABASE_USER="root"
+ENV DATABASE_PASSWORD="root"
+ENV DATABASE_HOST="127.0.0.1"
+ENV DATABASE_PORT="5432"
+ENV DATABASE_NAME="ankieta"
+ENV DATABASE_ROOT_NAME="root"
+ENV DATABASE_ROOT_PASSWORD=""
+ENV DRUPAL_SYSTEM_UUID="10a21c69-8f76-4706-9bb6-a908cb873ded"
+ENV DRUPAL_CONFIG_HASH="VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww"
+
+RUN apt install sudo -y
+
+
+
+COPY dump_db.sh /etc/cron.d/dump_db.sh
+RUN chmod 0644 /etc/cron.d/dump_db.sh
+RUN crontab /etc/cron.d/dump_db.sh
+ 
+
+RUN chmod +x /entry-point.sh
+
+
+"""
+run-cmd=['/entry-point.sh']
+run-writable-file-system = true
+
+
+[variables]
+NODE_MAX_INSTANCES = "1"
+NODE_MAX_SESSION = "1"
+TZ = "Europe/Warsaw"
+base_path = "/ankieta"
+
+[expose.80]
+type = "http-domain"
+paths = ["/ankieta"]
+#probe.disable = true
+
+[storage."/data"]
+type="block"
+max-size-mb=500

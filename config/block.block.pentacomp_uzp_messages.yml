@@ -1,0 +1,22 @@
+uuid: 4075f405-4360-4841-9ad2-e0a9e623ca0a
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: pentacomp_uzp_messages
+theme: pentacomp_uzp
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Wiadomości statusu'
+  label_display: '0'
+  provider: system
+visibility: {  }

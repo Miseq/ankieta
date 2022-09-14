@@ -1,0 +1,4 @@
+ID,name,email,Status,roles,Password
+2,ankieter,ankieter.ankieter@pentacomp.pl,1,questionnaire_moderator,ankieter
+3,moderator,moderator.moderator@pentacomp.pl,1,questionnaire_admin,moderator
+4,administrator,administrator.administrator@pentacomp.pl,1,administrator,administrator

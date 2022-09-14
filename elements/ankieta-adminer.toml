@@ -1,0 +1,22 @@
+type = "container"
+build = """
+    FROM adminer
+"""
+run-cmd = ['php', '-S', '[::]:8080', '-t', '/var/www/html']
+run-writable-file-system = true
+
+[expose.8080]
+type = "http-domain"
+probe = {disable=true}
+
+[variables]
+NODE_MAX_INSTANCES = "1"
+NODE_MAX_SESSION = "1"
+TZ = "Europe/Warsaw"
+PMA_HOST= "pentaquestdb"
+
+[inputs]
+MYSQL_ROOT_PASSWORD.type = "secret"
+
+
+

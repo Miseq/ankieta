@@ -1,0 +1,27 @@
+uuid: 03da1692-7b4d-4076-a268-d3dca2358065
+langcode: pl
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: TszJ7dH_11Qjmo_OpMzqznaED4Bvy1XfVnBzTC9LZXE
+id: pentacomp_uzp_tools
+theme: pentacomp_uzp
+region: content
+weight: 6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Narzędzia
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

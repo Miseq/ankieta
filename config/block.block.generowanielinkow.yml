@@ -1,0 +1,38 @@
+uuid: 4e088674-8f8d-4d65-a600-fee259017661
+langcode: pl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a6f80669-5f39-4201-b864-2bf4f5ea4554'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - pentacomp_uzp
+id: generowanielinkow
+theme: pentacomp_uzp
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:a6f80669-5f39-4201-b864-2bf4f5ea4554'
+settings:
+  id: 'block_content:a6f80669-5f39-4201-b864-2bf4f5ea4554'
+  label: 'Generowanie linków'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /token/generator
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      questionnaire_moderator: questionnaire_moderator

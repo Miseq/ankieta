@@ -1,0 +1,22 @@
+uuid: 9a879f3a-5581-4099-917e-678a0cede392
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: pentacomp_uzp_local_tasks
+theme: pentacomp_uzp
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Zakładki
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

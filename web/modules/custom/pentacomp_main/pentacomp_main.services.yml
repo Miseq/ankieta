@@ -1,0 +1,4 @@
+services:
+ pentacomp_main.token.tools:
+   class: Drupal\pentacomp_main\Service\TokenQuestionnaireManager
+   arguments: ['@entity_type.manager', '@current_user', '@database']

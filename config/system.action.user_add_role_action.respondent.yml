@@ -1,0 +1,14 @@
+uuid: de17822a-99e0-44d7-84c9-fa04c9e0389b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.respondent
+  module:
+    - user
+id: user_add_role_action.respondent
+label: 'Add the respondent role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: respondent

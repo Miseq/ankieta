@@ -1,0 +1,3 @@
+type="domain"
+include-elements=['pentquestadminer']
+names=['adminer.{{CLUSTER_DOMAIN}}']

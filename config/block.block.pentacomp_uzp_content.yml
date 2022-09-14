@@ -1,0 +1,22 @@
+uuid: 2c931204-c1b9-4f45-93de-cf946ac4d16b
+langcode: pl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: pentacomp_uzp_content
+theme: pentacomp_uzp
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Zawartość główna'
+  label_display: '0'
+  provider: system
+visibility: {  }

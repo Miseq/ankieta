@@ -1,0 +1,20 @@
+uuid: f97926ba-813e-4e8f-b05f-840f63eebb0c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - pentacomp_main
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Użytkownik anonimowy'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access questionnaire'
+  - 'use text format basic_html'

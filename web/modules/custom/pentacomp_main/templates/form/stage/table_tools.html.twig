@@ -1,0 +1,48 @@
+<h1>{{ form['#title'] }}</h1>
+<p>{{ form.info }}</p>
+<div class="row">
+  <div class="col">
+    {{ form['button']['select-poll'] }}
+  </div>
+</div>
+<div class="layout-row clearfix">
+  <div class="layout-column layout-column--half">
+    <p>{{ form['content']['info']['#table'] | raw }}</p>
+    <p>{{ form['content']['info']['#name'] | raw }}</p>
+    <p>{{ form['content']['info']['#data'] | raw }}</p>
+    <p>{{ form['content']['info']['#autor'] | raw }}</p>
+    <div class="col">
+      {{ form['table']['name_table'] }}
+      {{ form['table']['label_table'] }}
+    </div>
+    <div class="col">
+      {{ form['content']['table_action_button_create'] }}
+    </div>
+    <div class="">
+      {{ form['table_select'] }}
+      {{ form['content']['table_action_button_remove'] }}
+    </div>
+    <div class="">
+      {{ form['content']['table_action_button_back'] }}
+      {{ form['content']['table_action_button_select'] }}
+    </div>
+  </div>
+  <div class="layout-column layout-column--half">
+    <p>{{ form['content']['#memory'] | raw }}</p>
+    {% if form['content']['#memory_list'] %}
+      <ul>
+        {% for row in form['content']['#memory_list'] %}
+          <li>{{ row | raw }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <p>{{ form['content']['#db'] | raw }}</p>
+    {% if form['content']['#db_list'] %}
+      <ul>
+        {% for row in form['content']['#db_list'] %}
+          <li>{{ row | raw }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,22 @@
+uuid: 504f8867-c847-49b2-9580-a9a62dd7df4b
+langcode: pl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: pentacomp_uzp_powered
+theme: pentacomp_uzp
+region: content
+weight: 7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Witrynę napędza Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

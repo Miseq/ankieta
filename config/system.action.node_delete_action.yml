@@ -1,0 +1,13 @@
+uuid: 835c755e-d460-4af5-893a-43a88202bfd2
+langcode: pl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
+id: node_delete_action
+label: 'Usuń zawartość'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

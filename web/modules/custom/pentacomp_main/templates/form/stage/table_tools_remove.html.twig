@@ -1,0 +1,15 @@
+<h1>{{ form['#title'] }}</h1>
+<div class="layout-row clearfix">
+  <div class="layout-column layout-column--half">
+    <div class="">
+      <p>{{ form['content']['info']['#table'] | raw }}</p>
+      <p>{{ form['content']['info']['#name'] | raw }}</p>
+      <p>{{ form['content']['info']['#data'] | raw }}</p>
+      <p>{{ form['content']['info']['#autor'] | raw }}</p>
+    </div>
+    <div class="">
+      {{ form.confirm_remove }}
+      {{ form.cancel_remove }}
+    </div>
+  </div>
+</div>    

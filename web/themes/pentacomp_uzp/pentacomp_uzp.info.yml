@@ -1,0 +1,10 @@
+name: Pentacomp - UZP
+type: theme
+description: 'Wyświetlanie ankiet'
+core_version_requirement: ^8 || ^9
+libraries:
+  - pentacomp_uzp/global-styling
+base theme: classy
+screenshot: screenshot.png
+regions:
+  content: 'Content'

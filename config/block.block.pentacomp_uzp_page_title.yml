@@ -1,0 +1,20 @@
+uuid: 1ed5f196-5440-4c97-8382-bdc2338de69c
+langcode: pl
+status: true
+dependencies:
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: pentacomp_uzp_page_title
+theme: pentacomp_uzp
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Tytuł strony'
+  label_display: '0'
+  provider: core
+visibility: {  }

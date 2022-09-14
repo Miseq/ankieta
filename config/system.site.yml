@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: pl
+uuid: 10a21c69-8f76-4706-9bb6-a908cb873ded
+name: 'UZP Ankieta'
+mail: no-replay@pantacomp.pl
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /ankieta
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: pl
+mail_notification: ''

@@ -1,0 +1,36 @@
+uuid: 7705eec8-3a54-4566-812f-f0e44ed44c7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - pentacomp_main
+    - system
+    - webform
+    - webform_submission_log
+id: questionnaire_moderator
+label: 'Moderator ankiety'
+weight: -7
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access own webform configuration'
+  - 'access questionnaire'
+  - 'access site in maintenance mode'
+  - 'access webform help'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'create webform'
+  - 'delete own webform submission'
+  - 'edit any webform submission'
+  - 'edit own comments'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'token generator'
+  - 'view any webform submission'
+  - 'view own webform submission'
+  - 'view the administration theme'

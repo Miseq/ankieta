@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * hook_update_N
+ */
+function pentacomp_main_update_8002() {
+  $uuid = 'a6f80669-5f39-4201-b864-2bf4f5ea4554';
+  $content = '<p><a class="btn btn-outline-primary append-arrow" href="/token/generator" title="Generowanie linków">Generowanie linków</a></p>';
+  $content .= '<p><a class="btn btn-outline-primary append-arrow" href="/user/logout" title="Wylogowanie">Wylogowanie</a></p>';
+  $blockEntityManager = \Drupal::entityTypeManager()
+    ->getStorage('block_content');
+  $block = $blockEntityManager->create(array(
+    'type' => 'basic'
+  ));
+  $block->info = 'Menu lokalne';    
+  $block->set('uuid', $uuid); 
+  $block->set('body', [0 => [ 'format' => 'full_html', 'value' => $content]]);
+  $block->save();
+}

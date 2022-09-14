@@ -1,0 +1,14 @@
+uuid: 63f9e255-de33-4cf8-9df3-1dfcf60d88c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.respondent
+  module:
+    - user
+id: user_remove_role_action.respondent
+label: 'Remove the respondent role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: respondent

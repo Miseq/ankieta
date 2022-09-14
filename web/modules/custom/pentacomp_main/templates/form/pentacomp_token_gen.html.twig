@@ -1,0 +1,23 @@
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+
+<div class="d-flex align-items-end"> 
+  {{ form.zid }}
+  {{ form.gen }}
+</div>
+<div class="mt-2 gen-value"> 
+  <p class="{{ form['#color'] }}">{{ form['#message'] }}</p>
+  <table border="0">
+    <tr>
+      <td><p class="mpen-1">Link</p></td>
+      <td><p class="mpen-1">:</p></td>
+      <td><p class="mpen-1"><b><span id="link-url-pa">{{ form.link }}</span></b></p></td>
+    </tr>    
+    <tr>
+      <td><p class="mpen-1">Token</p></td>
+      <td><p class="mpen-1">:</p></td>
+      <td><p class="mpen-1"><b>{{ form.token }}</b></p></td> 
+    </tr>    
+  </table>
+</div>

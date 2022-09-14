@@ -1,0 +1,27 @@
+uuid: d59a0dcf-47ed-48e6-b8c9-b70713502187
+langcode: pl
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - pentacomp_uzp
+_core:
+  default_config_hash: jzu74Q7R0QWgw8IniA9HZRSb_a8RPak1M0q5J-VGkZI
+id: pentacomp_uzp_account_menu
+theme: pentacomp_uzp
+region: content
+weight: 4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu konta użytkownika'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

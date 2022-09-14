@@ -1,0 +1,14 @@
+uuid: c2aeeadf-1a73-4e8c-b569-a15a15cc5536
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.questionnaire_moderator
+  module:
+    - user
+id: user_remove_role_action.questionnaire_moderator
+label: 'Remove the questionnaire_moderator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: questionnaire_moderator

@@ -1,0 +1,5 @@
+type="domain"
+names=['ezamowienia.gov.pl']
+
+#[annotations]
+#"kubernetes.io/ingress.class" = "private"

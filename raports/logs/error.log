@@ -1,0 +1,49 @@
+2022/06/22 15:27:51 [notice] 1#1: using the "epoll" event method
+2022/06/22 15:27:51 [notice] 1#1: nginx/1.21.6
+2022/06/22 15:27:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/22 15:27:51 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/06/22 15:27:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/22 15:27:51 [notice] 1#1: start worker processes
+2022/06/22 15:27:51 [notice] 1#1: start worker process 22
+2022/06/22 15:27:51 [notice] 1#1: start worker process 23
+2022/06/22 15:27:51 [notice] 1#1: start worker process 24
+2022/06/22 15:27:51 [notice] 1#1: start worker process 25
+2022/06/22 15:27:51 [notice] 1#1: start worker process 26
+2022/06/22 15:27:51 [notice] 1#1: start worker process 27
+2022/06/22 15:27:51 [notice] 1#1: start worker process 28
+2022/06/22 15:27:51 [notice] 1#1: start worker process 29
+2022/06/22 15:27:51 [notice] 1#1: start worker process 30
+2022/06/22 15:27:51 [notice] 1#1: start worker process 31
+2022/06/22 15:27:51 [notice] 1#1: start worker process 32
+2022/06/22 15:27:51 [notice] 1#1: start worker process 33
+2022/06/23 15:47:34 [notice] 1#1: using the "epoll" event method
+2022/06/23 15:47:34 [notice] 1#1: nginx/1.21.6
+2022/06/23 15:47:34 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/23 15:47:34 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2022/06/23 15:47:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/23 15:47:34 [notice] 1#1: start worker processes
+2022/06/23 15:47:34 [notice] 1#1: start worker process 22
+2022/06/23 15:47:34 [notice] 1#1: start worker process 23
+2022/06/23 15:47:34 [notice] 1#1: start worker process 24
+2022/06/23 15:47:34 [notice] 1#1: start worker process 25
+2022/06/23 15:47:34 [notice] 1#1: start worker process 26
+2022/06/23 15:47:34 [notice] 1#1: start worker process 27
+2022/06/23 15:47:34 [notice] 1#1: start worker process 28
+2022/06/23 15:47:34 [notice] 1#1: start worker process 29
+2022/06/23 15:47:34 [notice] 1#1: start worker process 30
+2022/06/23 15:47:34 [notice] 1#1: start worker process 31
+2022/06/23 15:47:34 [notice] 1#1: start worker process 32
+2022/06/23 15:47:34 [notice] 1#1: start worker process 33
+2022/07/04 13:14:15 [error] 24#24: *3 FastCGI sent in stderr: "PHP message: Drupal\Core\Database\DatabaseAccessDeniedException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.29.0.4' (using password: YES) in /var/www/html/web/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php on line 197 #0 /var/www/html/web/core/lib/Drupal/Core/Database/Database.php(387): Drupal\Core\Database\Driver\mysql\Connection::open(Array)
+#1 /var/www/html/web/core/lib/Drupal/Core/Database/Database.php(169): Drupal\Core\Database\Database::openConnection('default', 'default')
+#2 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#3 /var/www/html/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#4 /var/www/html/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#5 /var/www/html/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#6 /var/www/html/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#7 /var/www/html/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#8 /var/www/html/web/core/lib/Drupal/Core/DrupalKernel.php(549): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#9 /var/www/html/web/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#10 /var/www/html/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#11 /var/www/html/web/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#12 /var/www/html/web/index.php(19): Drupal\Core\DrupalKernel->handle(

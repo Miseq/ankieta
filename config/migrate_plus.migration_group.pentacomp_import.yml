@@ -1,0 +1,10 @@
+uuid: 83d43e21-6b63-4dca-83cf-d1296b79f1b0
+langcode: pl
+status: true
+dependencies: {  }
+id: pentacomp_import
+label: Pentacomp
+description: 'Pentacomp import danych.'
+source_type: null
+module: null
+shared_configuration: null

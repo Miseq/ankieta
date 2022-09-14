@@ -1,0 +1,25 @@
+pentacomp_main.token.admin:
+  path: '/admin/token'
+  defaults:
+    _title: 'Zarządzanie tokenami'
+    _form: \Drupal\pentacomp_main\Form\QuestionnaireAdminForm
+  requirements:
+    _permission: 'access questionnaire admin token'
+
+pentacomp_main.token.generator:
+  path: '/token/generator'
+  defaults:
+    _title: 'Generator tokenów'
+    _form: \Drupal\pentacomp_main\Form\TokenGeneratorForm
+  requirements:
+    _permission: 'token generator'
+
+pentacomp_main.questionnaire:
+  path: '/ankieta'
+  defaults:
+    _title: ''
+    _controller: '\Drupal\pentacomp_main\Controller\QuestionnaireController::renderPage'
+  requirements:
+    _permission: 'access questionnaire'
+  options:
+    no_cache: 'TRUE'

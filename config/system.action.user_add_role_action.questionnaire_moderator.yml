@@ -1,0 +1,14 @@
+uuid: 4a6ed3ce-556f-4b7e-8d33-5fcfc08981d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.questionnaire_moderator
+  module:
+    - user
+id: user_add_role_action.questionnaire_moderator
+label: 'Add the questionnaire_moderator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: questionnaire_moderator

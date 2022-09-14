@@ -1,0 +1,20 @@
+uuid: f2ae6e8a-3794-4c81-95a1-2df152ff9122
+langcode: pl
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - pentacomp_main
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Użytkownik uwierzytelniony'
+weight: -8
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access questionnaire'
+  - 'use text format basic_html'
