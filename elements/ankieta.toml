@@ -97,7 +97,7 @@ base_path = "/ankieta"
 [expose.80]
 type = "http-domain"
 paths = ["/ankieta"]
-#probe.disable = true
+probe.disable = true
 
 [storage."/data"]
 type="block"
