@@ -93,7 +93,7 @@ run-writable-file-system = true
 NODE_MAX_INSTANCES = "1"
 NODE_MAX_SESSION = "1"
 TZ = "Europe/Warsaw"
-base_path = "/ankieta"
+base_path = "/"
 
 [expose.80]
 type = "http-domain"
