@@ -768,15 +768,16 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #
 
 $databases['default']['default'] = array (
-  'database' => 'test',
-  'username' => 'test',
-  'password' => 'test',
+  'database' => 'ankieta',
+  'username' => 'root',
+  'password' => 'root',
   'prefix' => '',
-  'host' => 'pentaquestdb',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
+  'host' => '127.0.0.1',
+  'port' => '5432',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\pgsql',
+  'driver' => 'pgsql',
 );
+
 
 $settings['config_sync_directory'] = '../../config/';
 $settings['drupal_env'] = 'dev';
