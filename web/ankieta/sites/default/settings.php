@@ -781,6 +781,7 @@ $databases['default']['default'] = array (
 $settings['config_sync_directory'] = '../../config/';
 $settings['drupal_env'] = 'dev';
 $settings['file_private_path'] = '../../private';
+$settings['file_public_path'] = 'sites/default/files';
 /*
 if (file_exists($app_root . '/' . $site_path . '/settings.dev.php')) {
   include $app_root . '/' . $site_path . '/settings.dev.php';
