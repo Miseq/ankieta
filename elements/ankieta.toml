@@ -97,7 +97,7 @@ base_path = "/"
 
 [expose.80]
 type = "http-domain"
-paths = ["/ankieta"]
+paths = ["/"]
 probe.disable = true
 
 [storage."/data"]
