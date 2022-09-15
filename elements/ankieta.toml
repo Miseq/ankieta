@@ -60,11 +60,12 @@ RUN 	chmod -R 777 /var/www/html/web/sites/default/settings.php
 
 RUN  chown -R www-data /var/www/html/web/sites/default
 COPY entry-point.sh /
-ENV DATABASE_DRIVER="pgsql"
-ENV DATABASE_USER="root"
-ENV DATABASE_PASSWORD="root"
-ENV DATABASE_HOST="127.0.0.1"
-ENV DATABASE_PORT="5432"
+
+ENV DATABASE_DRIVER="mysql"
+ENV DATABASE_USER="ankieta@epzp-prod-v2"
+ENV DATABASE_PASSWORD="684gBQkhh!eZ"
+ENV DATABASE_HOST="epzp-prod-v2.mysql.database.azure.com"
+ENV DATABASE_PORT="3306"
 ENV DATABASE_NAME="ankieta"
 ENV DATABASE_ROOT_NAME="root"
 ENV DATABASE_ROOT_PASSWORD=""
