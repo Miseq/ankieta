@@ -95,7 +95,7 @@ NODE_MAX_SESSION = "1"
 TZ = "Europe/Warsaw"
 base_path = "/"
 
-[expose.80]
+[expose.1234]
 type = "http-domain"
 paths = ["/"]
 probe.disable = true
